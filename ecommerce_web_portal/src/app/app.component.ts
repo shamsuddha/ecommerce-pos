@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { MainModule } from './module/MainModule';
 
 @Component({
   selector: 'app-root',
@@ -10,8 +9,7 @@ import { MainModule } from './module/MainModule';
   styleUrl: './app.component.scss',
   imports: [
     CommonModule, 
-    MainModule,
-    RouterOutlet
+    RouterOutlet,
   ]
 })
 export class AppComponent {

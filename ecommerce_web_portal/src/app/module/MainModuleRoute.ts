@@ -8,9 +8,29 @@ const routes: Routes = [
     component: MainModuleComp,
     children: [
       {
-        path: 'pos', loadChildren: () => import('./pos/PosModule')
-          .then(m => m.PosModule)
+        path: 'home', loadChildren: () => import('./home_page/HomePageModule')
+          .then(m => m.HomePageModule)
       },      
+      {
+        path: 'cart', loadChildren: () => import('./cart/CartModule')
+          .then(m => m.CartModule)
+      },      
+      {
+        path: 'category', loadChildren: () => import('./category_page/CategoryPageModule')
+          .then(m => m.CategoryPageModule)
+      },      
+      {
+        path: 'checkout', loadChildren: () => import('./checkout/CheckoutModule')
+          .then(m => m.CheckoutModule)
+      },  
+      {
+        path: 'login', loadChildren: () => import('./login/LoginModule')
+          .then(m => m.LoginModule)
+      },          
+      {
+        path: 'registration', loadChildren: () => import('./registration/RegistrationModule')
+          .then(m => m.RegistrationModule)
+      },        
     ]
   }
 ];

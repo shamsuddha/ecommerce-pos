@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ProductCategorySetupComp } from './ProductCategorySetupComp';
+import { SingleProductPageComp } from './SingleProductPageComp';
 
 const routes: Routes = [
   {
-    path: '', component: ProductCategorySetupComp,
+    path: '', component: SingleProductPageComp,
   }
 ];
 
@@ -13,4 +13,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 
-export class ProductCategoryRoutes { }
+export class SingleProductPageRoute { }
