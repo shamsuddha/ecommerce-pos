@@ -1,15 +1,18 @@
+import { CommonModule } from "@angular/common";
 import { Component, OnInit } from "@angular/core";
 
+
 @Component({
-  selector: 'MainModuleComp',
-  templateUrl: './MainModuleComp.html',
+  selector: 'DashboardComp',
+  templateUrl: './DashboardComp.html',
+  styleUrls: ['./DashboardComp.scss'],
   // standalone: true,
   // imports: [
   //   CommonModule, 
   //   MainModuleRoute,
   // ],
 })
-export class MainModuleComp implements OnInit {
+export class DashboardComp implements OnInit {
 
   constructor() { }
 

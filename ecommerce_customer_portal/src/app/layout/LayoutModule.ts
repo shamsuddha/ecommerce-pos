@@ -1,25 +1,25 @@
 import { NgModule } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
-import { MainModuleComp } from './MainModuleComp';
-import { MainModuleRoute } from './MainModuleRoute';
+import { LayoutModuleComp } from './LayoutModuleComp';
+import { LayoutModuleRoute } from './LayoutModuleRoute';
 import { HeaderComp } from './header/HeaderComp';
 import { FooterComp } from './footer/FooterComp';
 
 @NgModule({
   declarations: [
-    MainModuleComp,
+    LayoutModuleComp,
     HeaderComp,
     FooterComp
   ],
 
   imports: [
     CommonModule, 
-    MainModuleRoute
+    LayoutModuleRoute
   ],
 
   providers: [],
 
 })
 
-export class MainModule { }
+export class LayoutModule { }

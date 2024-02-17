@@ -1,15 +1,17 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'MainModuleComp',
-  templateUrl: './MainModuleComp.html',
+  selector: 'LayoutModuleComp',
+  templateUrl:'./LayoutModuleComp.html',
+  
+  
   // standalone: true,
   // imports: [
   //   CommonModule, 
   //   MainModuleRoute,
   // ],
 })
-export class MainModuleComp implements OnInit {
+export class LayoutModuleComp implements OnInit {
 
   constructor() { }
 
