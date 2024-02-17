@@ -1,228 +1,659 @@
-<div class="layout-wrapper layout-content-navbar">
-  <div class="layout-container">
-    <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
-      <div class="app-brand demo">
-        <a href="" class="app-brand-link">
-          <span class="app-brand-text demo menu-text fw-semibold ms-2">Craft Coders Lab</span>
-        </a>
-        <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
-          <i class="mdi menu-toggle-icon d-xl-block align-middle mdi-20px"></i>
-        </a>
-      </div>
-      <div class="menu-inner-shadow"></div>
-      <ul class="menu-inner py-1">
-        <li class="menu-item  open">
-          <a href="/" class="menu-link">
-            <i class="menu-icon tf-icons mdi mdi-home-outline"></i>
-            <div data-i18n="Dashboards">Dashboards</div>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a href="/module/category" target="_blank" class="menu-link">
-            <i class="menu-icon tf-icons mdi mdi-view-grid-outline"></i>
-            <div>Category</div>          
-          </a>
-        </li>
-        <!-- Layouts -->
-        <li class="menu-item">
-          <a href="javascript:void(0);" class="menu-link menu-toggle">
-            <i class="menu-icon tf-icons mdi mdi-window-maximize"></i>
-            <div data-i18n="Layouts">Dropdown</div>
-          </a>
-          <ul class="menu-sub">
-            <li class="menu-item">
-              <a href="" class="menu-link">
-                <div data-i18n="Without menu">Without menu</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="" class="menu-link">
-                <div data-i18n="Without navbar">Without navbar</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="" class="menu-link">
-                <div data-i18n="Container">Container</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="" class="menu-link">
-                <div data-i18n="Fluid">Fluid</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="" class="menu-link">
-                <div data-i18n="Blank">Blank</div>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <!-- Front Pages -->
-        <li class="menu-item">
-          <a href="javascript:void(0);" class="menu-link menu-toggle">
-            <i class="menu-icon tf-icons mdi mdi-flip-to-front"></i>
-            <div data-i18n="Front Pages">Front Pages</div>
-            <div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
-          </a>
-          <ul class="menu-sub">
-            <li class="menu-item">
-              <a href="" class="menu-link" target="_blank">
-                <div data-i18n="Landing">Landing</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="" class="menu-link" target="_blank">
-                <div data-i18n="Pricing">Pricing</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="" class="menu-link" target="_blank">
-                <div data-i18n="Payment">Payment</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="" class="menu-link" target="_blank">
-                <div data-i18n="Checkout">Checkout</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="" class="menu-link" target="_blank">
-                <div data-i18n="Help Center">Help Center</div>
-              </a>
-            </li>
-          </ul>
-        </li>
-
-        <li class="menu-header fw-medium mt-4">
-          <span class="menu-header-text">Apps &amp; Pages</span>
-        </li>
-        <!-- Apps -->
-        <li class="menu-item">
-          <a href="" target="_blank" class="menu-link">
-            <i class="menu-icon tf-icons mdi mdi-email-outline"></i>
-            <div data-i18n="Email">Email</div>
-            <div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a href="" target="_blank" class="menu-link">
-            <i class="menu-icon tf-icons mdi mdi-message-outline"></i>
-            <div data-i18n="Chat">Chat</div>
-            <div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a href="" target="_blank" class="menu-link">
-            <i class="menu-icon tf-icons mdi mdi-calendar-blank-outline"></i>
-            <div data-i18n="Calendar">Calendar</div>
-            <div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a href="" target="_blank" class="menu-link">
-            <i class="menu-icon tf-icons mdi mdi-view-grid-outline"></i>
-            <div data-i18n="Kanban">Kanban</div>
-            <div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
-          </a>
-        </li>
-        <!-- Pages -->
-      </ul>
-    </aside>
-    <!-- / Menu -->
-    <!-- Layout container -->
-    <div class="layout-page">
-      <!-- Navbar -->
-      <nav
-        class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
-        id="layout-navbar">
-        <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
-          <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
-            <i class="mdi mdi-menu mdi-24px"></i>
-          </a>
-        </div>
-        <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
-          <!-- Search -->
-          <div class="navbar-nav align-items-center">
-            <div class="nav-item d-flex align-items-center">
-              <i class="mdi mdi-magnify mdi-24px lh-0"></i>
-              <input type="text" class="form-control border-0 shadow-none bg-body" placeholder="Search..."
-                aria-label="Search..." />
+<div class="container-scroller">
+  <!-- partial:partials/_navbar.html -->
+  <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row default-layout-navbar">
+    <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+      <a class="navbar-brand brand-logo" href="l">Craft Coders Lab</a>
+      <a class="navbar-brand brand-logo-mini" href=""><img src="images/logo-mini.svg" alt="logo"/></a>
+    </div>
+    <div class="navbar-menu-wrapper d-flex align-items-stretch">
+      <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+        <span class="fas fa-bars"></span>
+      </button>
+      <ul class="navbar-nav">
+        <li class="nav-item nav-search d-none d-md-flex">
+          <div class="nav-link">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-search"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" placeholder="Search" aria-label="Search">
             </div>
           </div>
-          <!-- /Search -->
-          <ul class="navbar-nav flex-row align-items-center ms-auto">
-            <!-- Place this tag where you want the button to render. -->
-            <li class="nav-item lh-1 me-3">
-              <a class="github-button" href="" data-icon="octicon-star" data-size="large" data-show-count="true"
-                aria-label="Star themeselection/materio-bootstrap-html-admin-template-free on GitHub">Star</a>
-            </li>
-            <!-- User -->
-            <li class="nav-item navbar-dropdown dropdown-user dropdown">
-              <a class="nav-link dropdown-toggle hide-arrow p-0" href="javascript:void(0);" data-bs-toggle="dropdown">
-                <div class="avatar avatar-online">
-                  <img src="" alt class="w-px-40 h-auto rounded-circle" />
-                </div>
+        </li>
+      </ul>
+      <ul class="navbar-nav navbar-nav-right">
+        <li class="nav-item d-none d-lg-flex">
+          <a class="nav-link" href="#">
+            <span class="btn btn-primary">+ Create new</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown d-none d-lg-flex">
+          <div class="nav-link">
+            <span class="dropdown-toggle btn btn-outline-dark" id="languageDropdown" data-toggle="dropdown">English</span>
+            <div class="dropdown-menu navbar-dropdown" aria-labelledby="languageDropdown">
+              <a class="dropdown-item font-weight-medium" href="#">
+                French
               </a>
-              <ul class="dropdown-menu dropdown-menu-end mt-3 py-2">
-                <li>
-                  <a class="dropdown-item pb-2 mb-1" href="#">
-                    <div class="d-flex align-items-center">
-                      <div class="flex-shrink-0 me-2 pe-1">
-                        <div class="avatar avatar-online">
-                          <img src="" alt class="w-px-40 h-auto rounded-circle" />
-                        </div>
-                      </div>
-                      <div class="flex-grow-1">
-                        <h6 class="mb-0">John Doe</h6>
-                        <small class="text-muted">Admin</small>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <div class="dropdown-divider my-1"></div>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <i class="mdi mdi-account-outline me-1 mdi-20px"></i>
-                    <span class="align-middle">My Profile</span>
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <i class="mdi mdi-cog-outline me-1 mdi-20px"></i>
-                    <span class="align-middle">Settings</span>
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <span class="d-flex align-items-center align-middle">
-                      <i class="flex-shrink-0 mdi mdi-credit-card-outline me-1 mdi-20px"></i>
-                      <span class="flex-grow-1 align-middle ms-1">Billing</span>
-                      <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <div class="dropdown-divider my-1"></div>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="javascript:void(0);">
-                    <i class="mdi mdi-power me-1 mdi-20px"></i>
-                    <span class="align-middle">Log Out</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <div class="content-wrapper">
-        <div class="container-xxl flex-grow-1 container-p-y">
-          <router-outlet></router-outlet>
-        </div>
-      </div>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item font-weight-medium" href="#">
+                Espanol
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item font-weight-medium" href="#">
+                Latin
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item font-weight-medium" href="#">
+                Arabic
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+            <i class="fas fa-bell mx-0"></i>
+            <span class="count">16</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+            <a class="dropdown-item">
+              <p class="mb-0 font-weight-normal float-left">You have 16 new notifications
+              </p>
+              <span class="badge badge-pill badge-warning float-right">View all</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item preview-item">
+              <div class="preview-thumbnail">
+                <div class="preview-icon bg-danger">
+                  <i class="fas fa-exclamation-circle mx-0"></i>
+                </div>
+              </div>
+              <div class="preview-item-content">
+                <h6 class="preview-subject font-weight-medium">Application Error</h6>
+                <p class="font-weight-light small-text">
+                  Just now
+                </p>
+              </div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item preview-item">
+              <div class="preview-thumbnail">
+                <div class="preview-icon bg-warning">
+                  <i class="fas fa-wrench mx-0"></i>
+                </div>
+              </div>
+              <div class="preview-item-content">
+                <h6 class="preview-subject font-weight-medium">Settings</h6>
+                <p class="font-weight-light small-text">
+                  Private message
+                </p>
+              </div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item preview-item">
+              <div class="preview-thumbnail">
+                <div class="preview-icon bg-info">
+                  <i class="far fa-envelope mx-0"></i>
+                </div>
+              </div>
+              <div class="preview-item-content">
+                <h6 class="preview-subject font-weight-medium">New user registration</h6>
+                <p class="font-weight-light small-text">
+                  2 days ago
+                </p>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-envelope mx-0"></i>
+            <span class="count">25</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+            <div class="dropdown-item">
+              <p class="mb-0 font-weight-normal float-left">You have 7 unread mails
+              </p>
+              <span class="badge badge-info badge-pill float-right">View all</span>
+            </div>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item preview-item">
+              <div class="preview-thumbnail">
+                  <img src="images/faces/face4.jpg" alt="image" class="profile-pic">
+              </div>
+              <div class="preview-item-content flex-grow">
+                <h6 class="preview-subject ellipsis font-weight-medium">David Grey
+                  <span class="float-right font-weight-light small-text">1 Minutes ago</span>
+                </h6>
+                <p class="font-weight-light small-text">
+                  The meeting is cancelled
+                </p>
+              </div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item preview-item">
+              <div class="preview-thumbnail">
+                  <img src="images/faces/face2.jpg" alt="image" class="profile-pic">
+              </div>
+              <div class="preview-item-content flex-grow">
+                <h6 class="preview-subject ellipsis font-weight-medium">Tim Cook
+                  <span class="float-right font-weight-light small-text">15 Minutes ago</span>
+                </h6>
+                <p class="font-weight-light small-text">
+                  New product launch
+                </p>
+              </div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item preview-item">
+              <div class="preview-thumbnail">
+                  <img src="images/faces/face3.jpg" alt="image" class="profile-pic">
+              </div>
+              <div class="preview-item-content flex-grow">
+                <h6 class="preview-subject ellipsis font-weight-medium"> Johnson
+                  <span class="float-right font-weight-light small-text">18 Minutes ago</span>
+                </h6>
+                <p class="font-weight-light small-text">
+                  Upcoming board meeting
+                </p>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="nav-item nav-profile dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+            <img src="images/faces/face5.jpg" alt="profile"/>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+            <a class="dropdown-item">
+              <i class="fas fa-cog text-primary"></i>
+              Settings
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item">
+              <i class="fas fa-power-off text-primary"></i>
+              Logout
+            </a>
+          </div>
+        </li>
+        <li class="nav-item nav-settings d-none d-lg-block">
+          <a class="nav-link" href="#">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
+      <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+        <span class="fas fa-bars"></span>
+      </button>
     </div>
+  </nav>
+  <!-- partial -->
+  <div class="container-fluid page-body-wrapper">
+    <nav class="sidebar sidebar-offcanvas" id="sidebar">
+      <ul class="nav">
+        <li class="nav-item nav-profile">
+          <div class="nav-link">
+            <div class="profile-image">
+              <img src="images/faces/face5.jpg" alt="image"/>
+            </div>
+            <div class="profile-name">
+              <p class="name">
+                Welcome Jane
+              </p>
+              <p class="designation">
+                Super Admin
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index-2.html">
+            <i class="fa fa-home menu-icon"></i>
+            <span class="menu-title">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pages/widgets.html">
+            <i class="fa fa-puzzle-piece menu-icon"></i>
+            <span class="menu-title">Widgets</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#page-layouts" aria-expanded="false" aria-controls="page-layouts">
+            <i class="fab fa-trello menu-icon"></i>
+            <span class="menu-title">Page Layouts</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="page-layouts">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item d-none d-lg-block"> <a class="nav-link" href="pages/layout/boxed-layout.html">Boxed</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/layout/rtl-layout.html">RTL</a></li>
+              <li class="nav-item d-none d-lg-block"> <a class="nav-link" href="pages/layout/horizontal-menu.html">Horizontal Menu</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item d-none d-lg-block">
+          <a class="nav-link" data-toggle="collapse" href="#sidebar-layouts" aria-expanded="false" aria-controls="sidebar-layouts">
+            <i class="fas fa-columns menu-icon"></i>
+            <span class="menu-title">Sidebar Layouts</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="sidebar-layouts">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="pages/layout/compact-menu.html">Compact menu</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/layout/sidebar-collapsed.html">Icon menu</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/layout/sidebar-hidden.html">Sidebar Hidden</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/layout/sidebar-hidden-overlay.html">Sidebar Overlay</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/layout/sidebar-fixed.html">Sidebar Fixed</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+            <i class="far fa-compass menu-icon"></i>
+            <span class="menu-title">Basic UI Elements</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-basic">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="pages/ui-features/accordions.html">Accordions</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/ui-features/badges.html">Badges</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/ui-features/breadcrumbs.html">Breadcrumbs</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/ui-features/modals.html">Modals</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/ui-features/progress.html">Progress bar</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/ui-features/pagination.html">Pagination</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/ui-features/tabs.html">Tabs</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/ui-features/tooltips.html">Tooltips</a></li>
+            </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#ui-advanced" aria-expanded="false" aria-controls="ui-advanced">
+            <i class="fas fa-clipboard-list menu-icon"></i>
+            <span class="menu-title">Advanced Elements</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="ui-advanced">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dragula.html">Dragula</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/ui-features/clipboard.html">Clipboard</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/ui-features/context-menu.html">Context menu</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/ui-features/slider.html">Sliders</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/ui-features/carousel.html">Carousel</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/ui-features/colcade.html">Colcade</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/ui-features/loaders.html">Loaders</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+            <i class="fab fa-wpforms menu-icon"></i>
+            <span class="menu-title">Form elements</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="form-elements">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Basic Elements</a></li>                
+              <li class="nav-item"><a class="nav-link" href="pages/forms/advanced_elements.html">Advanced Elements</a></li>
+              <li class="nav-item"><a class="nav-link" href="pages/forms/validation.html">Validation</a></li>
+              <li class="nav-item"><a class="nav-link" href="pages/forms/wizard.html">Wizard</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#editors" aria-expanded="false" aria-controls="editors">
+            <i class="fas fa-pen-square menu-icon"></i>
+            <span class="menu-title">Editors</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="editors">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"><a class="nav-link" href="pages/forms/text_editor.html">Text editors</a></li>
+              <li class="nav-item"><a class="nav-link" href="pages/forms/code_editor.html">Code editors</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+            <i class="fas fa-chart-pie menu-icon"></i>
+            <span class="menu-title">Charts</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="charts">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">ChartJs</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/charts/morris.html">Morris</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/charts/flot-chart.html">Flot</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/charts/google-charts.html">Google charts</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/charts/sparkline.html">Sparkline js</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/charts/c3.html">C3 charts</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/charts/chartist.html">Chartists</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/charts/justGage.html">JustGage</a></li>
+            </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+            <i class="fas fa-table menu-icon"></i>
+            <span class="menu-title">Tables</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="tables">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.html">Basic table</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/tables/data-table.html">Data table</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/tables/js-grid.html">Js-grid</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/tables/sortable-table.html">Sortable table</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pages/ui-features/popups.html">
+            <i class="fas fa-minus-square menu-icon"></i>
+            <span class="menu-title">Popups</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pages/ui-features/notifications.html">
+            <i class="fas fa-bell menu-icon"></i>
+            <span class="menu-title">Notifications</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+            <i class="fa fa-stop-circle menu-icon"></i>
+            <span class="menu-title">Icons</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="icons">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="pages/icons/flag-icons.html">Flag icons</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/icons/font-awesome.html">Font Awesome</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/icons/simple-line-icon.html">Simple line icons</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/icons/themify.html">Themify icons</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#maps" aria-expanded="false" aria-controls="maps">
+            <i class="fas fa-map-marker-alt menu-icon"></i>
+            <span class="menu-title">Maps</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="maps">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="pages/maps/mapeal.html">Mapeal</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/maps/vector-map.html">Vector Map</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/maps/google-maps.html">Google Map</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+            <i class="fas fa-window-restore menu-icon"></i>
+            <span class="menu-title">User Pages</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="auth">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/samples/login-2.html"> Login 2 </a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/samples/register-2.html"> Register 2 </a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> Lockscreen </a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#error" aria-expanded="false" aria-controls="error">
+            <i class="fas fa-exclamation-circle menu-icon"></i>
+            <span class="menu-title">Error pages</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="error">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
+            <i class="fas fa-file menu-icon"></i>
+            <span class="menu-title">General Pages</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="general-pages">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Blank Page </a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/samples/profile.html"> Profile </a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/samples/faq.html"> FAQ </a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/samples/faq-2.html"> FAQ 2 </a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/samples/news-grid.html"> News grid </a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/samples/timeline.html"> Timeline </a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/samples/search-results.html"> Search Results </a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/samples/portfolio.html"> Portfolio </a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#apps" aria-expanded="false" aria-controls="apps">
+            <i class="fas fa-briefcase menu-icon"></i>
+            <span class="menu-title">Apps</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="apps">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="pages/apps/email.html"> Email </a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/apps/calendar.html"> Calendar </a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/apps/todo.html"> Todo </a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/apps/gallery.html"> Gallery </a></li>
+            </ul>`
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#e-commerce" aria-expanded="false" aria-controls="e-commerce">
+            <i class="fas fa-shopping-cart menu-icon"></i>
+            <span class="menu-title">E-commerce</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="e-commerce">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="pages/samples/invoice.html"> Invoice </a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/samples/pricing-table.html"> Pricing Table </a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/samples/orders.html"> Orders </a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pages/documentation.html">
+            <i class="far fa-file-alt menu-icon"></i>
+            <span class="menu-title">Documentation</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- partial -->
+    <div class="main-panel">
+      <div class="content-wrapper">
+        <div class="page-header">
+          <h3 class="page-title">
+            Dashboard
+          </h3>
+        </div>
+        <div class="row grid-margin">
+          <div class="col-12">
+            <div class="card card-statistics">
+              <div class="card-body">
+                <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+                    <div class="statistics-item">
+                      <p>
+                        <i class="icon-sm fa fa-user mr-2"></i>
+                        New users
+                      </p>
+                      <h2>54000</h2>
+                      <label class="badge badge-outline-success badge-pill">2.7% increase</label>
+                    </div>
+                    <div class="statistics-item">
+                      <p>
+                        <i class="icon-sm fas fa-hourglass-half mr-2"></i>
+                        Avg Time
+                      </p>
+                      <h2>123.50</h2>
+                      <label class="badge badge-outline-danger badge-pill">30% decrease</label>
+                    </div>
+                    <div class="statistics-item">
+                      <p>
+                        <i class="icon-sm fas fa-cloud-download-alt mr-2"></i>
+                        Downloads
+                      </p>
+                      <h2>3500</h2>
+                      <label class="badge badge-outline-success badge-pill">12% increase</label>
+                    </div>
+                    <div class="statistics-item">
+                      <p>
+                        <i class="icon-sm fas fa-check-circle mr-2"></i>
+                        Update
+                      </p>
+                      <h2>7500</h2>
+                      <label class="badge badge-outline-success badge-pill">57% increase</label>
+                    </div>
+                    <div class="statistics-item">
+                      <p>
+                        <i class="icon-sm fas fa-chart-line mr-2"></i>
+                        Sales
+                      </p>
+                      <h2>9000</h2>
+                      <label class="badge badge-outline-success badge-pill">10% increase</label>
+                    </div>
+                    <div class="statistics-item">
+                      <p>
+                        <i class="icon-sm fas fa-circle-notch mr-2"></i>
+                        Pending
+                      </p>
+                      <h2>7500</h2>
+                      <label class="badge badge-outline-danger badge-pill">16% decrease</label>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <i class="fas fa-gift"></i>
+                  Orders
+                </h4>
+                <canvas id="orders-chart"></canvas>
+                <div id="orders-chart-legend" class="orders-chart-legend"></div>                  
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <i class="fas fa-chart-line"></i>
+                  Sales
+                </h4>
+                <h2 class="mb-5">56000 <span class="text-muted h4 font-weight-normal">Sales</span></h2>
+                <canvas id="sales-chart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body d-flex flex-column">
+                <h4 class="card-title">
+                  <i class="fas fa-chart-pie"></i>
+                  Sales status
+                </h4>
+                <div class="flex-grow-1 d-flex flex-column justify-content-between">
+                  <canvas id="sales-status-chart" class="mt-3"></canvas>
+                  <div class="pt-4">
+                    <div id="sales-status-chart-legend" class="sales-status-chart-legend"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <i class="far fa-futbol"></i>
+                  Activity
+                </h4>
+                <ul class="solid-bullet-list">
+                  <li>
+                    <h5>4 people shared a post
+                      <span class="float-right text-muted font-weight-normal small">8:30 AM</span>
+                    </h5>
+                    <p class="text-muted">It was an awesome work!</p>
+                    <div class="image-layers">
+                      <div class="img-sm profile-image-text bg-warning rounded-circle image-layer-item">M</div>
+                      <img class="img-sm rounded-circle image-layer-item" src="images/faces/face3.jpg" alt="profile"/>
+                      <img class="img-sm rounded-circle image-layer-item" src="images/faces/face5.jpg" alt="profile"/>
+                      <img class="img-sm rounded-circle image-layer-item" src="images/faces/face8.jpg" alt="profile"/>
+                    </div>
+                  </li>
+                  <li>
+                    <h5>Stella posted in a group
+                      <span class="float-right text-muted font-weight-normal small">11:40 AM</span>
+                    </h5>
+                    <p class="text-muted">The team has done a great job</p>
+                  </li>
+                  <li>
+                    <h5>Dobrick posted in material
+                      <span class="float-right text-muted font-weight-normal small">4:30 PM</span>
+                    </h5>
+                    <p class="text-muted">Great work. Keep it up!</p>
+                  </li>
+                </ul>
+                <div class="border-top pt-3">
+                  <div class="d-flex justify-content-between">
+                    <button class="btn btn-outline-dark">More</button>
+                    <button class="btn btn-primary btn-icon-text">
+                      Add new task
+                      <i class="btn-icon-append fas fa-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body d-flex flex-column">
+                <h4 class="card-title">
+                  <i class="fas fa-tachometer-alt"></i>
+                  Daily Sales
+                </h4>
+                <p class="card-description">Daily sales for the past one month</p>
+                <div class="flex-grow-1 d-flex flex-column justify-content-between">
+                  <canvas id="daily-sales-chart" class="mt-3 mb-3 mb-md-0"></canvas>
+                  <div id="daily-sales-chart-legend" class="daily-sales-chart-legend pt-4 border-top"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+      <!-- content-wrapper ends -->
+      <!-- partial:partials/_footer.html -->
+    <FooterComp></FooterComp>
+      <!-- partial -->
+    </div>
+    <!-- main-panel ends -->
   </div>
-  <div class="layout-overlay layout-menu-toggle"></div>
+  <!-- page-body-wrapper ends -->
 </div>
