@@ -1,14 +1,14 @@
 import { Routes } from '@angular/router';
-import { LayoutModuleComp } from './layout/LayoutModuleComp';
-import { DashboardComp } from './module/dashboard/DashboardComp';
 import { MainModuleComp } from './module/MainModuleComp';
+
 
 export const routeList: Routes = [
 
+  { path: '', redirectTo: '/index', pathMatch: 'full' },
+ // { path: 'module', redirectTo: '/module/dashboard', pathMatch: 'full' },
+
   {
-    path: '',
-    component: LayoutModuleComp,
-    loadChildren: () => import('./layout/LayoutModule').then(m => m.LayoutModule)
+    path: '', loadChildren: () => import('./layout/LayoutModule').then(m => m.LayoutModule)
   },
 
   {
@@ -16,9 +16,9 @@ export const routeList: Routes = [
     component: MainModuleComp,
     loadChildren: () => import('./module/MainModule').then(m => m.MainModule)
   }
+  
 ];
 
 
 
 //export const routes: Routes = [];
-1

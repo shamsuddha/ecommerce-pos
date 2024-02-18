@@ -6,6 +6,18 @@ const routes: Routes = [
   {
     path: '', 
     component: IndexComp,
+    children: [
+      // {
+      //   path: 'index', loadChildren: () => import('./../index/IndexModule')
+      //     .then(m => m.IndexModule)
+      // },      
+      // {
+      //   path: 'auth', loadChildren: () => import('./../auth/AuthModule')
+      //     .then(m => m.AuthModule)
+      // },      
+      
+    ]
+
   }
 ];
 

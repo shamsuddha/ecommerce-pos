@@ -1,18 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { MainModuleComp } from './MainModuleComp';
-import { DashboardComp } from './dashboard/DashboardComp';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/module/dashboard', pathMatch: 'full' },
   {
-    path: '', 
+    path: '',
     children: [
       {
-        path: 'dashboard', 
-        component:DashboardComp,
-       
-      },      
-     
+        path: 'dashboard', loadChildren: () => import('./dashboard/DashboardModule')
+          .then(m => m.DashboardModule)
+      },
+      {
+        path: 'category', loadChildren: () => import('./category/CategoryModule')
+          .then(m => m.CategoryModule)
+      },
     ]
   }
 ];

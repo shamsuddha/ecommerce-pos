@@ -4,11 +4,6 @@ import { Component, OnInit } from "@angular/core";
   selector: 'MainModuleComp',
   templateUrl: './MainModuleComp.html',
   styleUrl: './MainModuleComp.scss'
-  // standalone: true,
-  // imports: [
-  //   CommonModule, 
-  //   MainModuleRoute,
-  // ],
 })
 export class MainModuleComp implements OnInit {
 

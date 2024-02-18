@@ -8,14 +8,11 @@ import { DashboardRoute } from './DashboardRoute';
   declarations: [
     DashboardComp
   ],
-
   imports: [
-    CommonModule, 
+    CommonModule,
     DashboardRoute
   ],
-
   providers: [],
-
 })
 
 export class DashboardModule { }

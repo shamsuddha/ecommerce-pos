@@ -30,9 +30,21 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",            
+              "src/assets/frontend/style-frontend.css",             
+              "src/assets/backend/fonts/materialdesignicons.css",             
+              "src/assets/backend/css/core.css"      
             ],
-            "scripts": [],
+            "scripts": [             
+              
+              "src/assets/backend/js/helpers.js",
+              "src/assets/backend/js/menu.js",
+              "src/assets/backend/js/main.js",
+              "src/assets/frontend/main.js"
+
+
+
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
