@@ -29,22 +29,22 @@
               "src/favicon.ico",
               "src/assets"
             ],
+
             "styles": [
               "src/styles.scss",            
-              "src/assets/frontend/style-frontend.css",             
-              "src/assets/backend/fonts/materialdesignicons.css",             
-              "src/assets/backend/css/core.css"      
-            ],
-            "scripts": [             
-              
-              "src/assets/backend/js/helpers.js",
-              "src/assets/backend/js/menu.js",
-              "src/assets/backend/js/main.js",
-              "src/assets/frontend/main.js"
-
-
+              "src/assets/backend/vendor/bootstrap/css/bootstrap.min.css",
+              "src/assets/backend/vendor/bootstrap-icons/bootstrap-icons.css",
+              "src/assets/backend/vendor/boxicons/css/boxicons.min.css",
+              "src/assets/backend/css/style.css"
 
             ],
+
+            "scripts": [          
+            "src/assets/backend/vendor/bootstrap/js/bootstrap.bundle.min.js",            
+            "src/assets/backend/js/main.js"       
+            
+            ],
+
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {

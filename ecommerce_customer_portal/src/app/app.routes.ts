@@ -5,10 +5,10 @@ import { MainModuleComp } from './module/MainModuleComp';
 export const routeList: Routes = [
 
   { path: '', redirectTo: '/index', pathMatch: 'full' },
- // { path: 'module', redirectTo: '/module/dashboard', pathMatch: 'full' },
+  { path: 'module', redirectTo: '/module/dashboard', pathMatch: 'full' },
 
   {
-    path: '', loadChildren: () => import('./layout/LayoutModule').then(m => m.LayoutModule)
+    path: '', loadChildren: () => import('./layout/frontend/FrontendLayoutModule').then(m => m.FrontendLayoutModule)
   },
 
   {
@@ -18,7 +18,6 @@ export const routeList: Routes = [
   }
   
 ];
-
 
 
 //export const routes: Routes = [];
